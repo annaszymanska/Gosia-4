@@ -6,18 +6,19 @@
 
 * {
 	margin: 0px;
-	line-height: 1.5;
+	line-height: 1.7;
 }
 
 body {
 	height: 100vh;
+	font-size: 1.1rem;
 }
 
 header {
 	display: table;
 	min-height: 150px;
 	width: 100%;
-	background-color: darkcyan; /*cadetblue*/
+	background-image: linear-gradient(transparent, darkcyan, darkcyan, darkcyan);
 	text-align: left;
 	font-size: 2rem;
 	text-align: center;
@@ -27,13 +28,14 @@ header .title {
 	display: table-cell;
 	vertical-align: middle;
 	padding: 2rem;
+	padding-bottom: 2.5rem;
 }
 
 header .title h1 {
-	font-size: 2.5rem;
+	font-size: 2.2rem;
 	font-family: 'Charmonman', cursive;
 	color: goldenrod;
-	text-shadow: 2px 2px 40px gold;
+	/*text-shadow: 1px 1px 10px black;*/
 }
 
 header .title h1.subpage-title {
@@ -42,8 +44,8 @@ header .title h1.subpage-title {
 
 .front-image {
 	text-align: center;
-	min-height: 60vh;
-	margin-bottom: 2rem;
+	min-height: 62vh;
+	margin-bottom: -4rem; /*2rem*/
 	padding: 2rem 0;
 	background-image: radial-gradient(turquoise, #008486);
 	box-shadow: 0px 0px 10px black;
@@ -84,21 +86,23 @@ footer{
 }
 
 footer a {
-	color: cyan;
+	color: goldenrod;
 }
 
 footer a.sublink {
-	color: blue;
+	color: darkgoldenrod;
 	font-size: 90%;
 }
 
 .container {
 	position: relative;
-	max-width: 70vw;
-	margin: 0 auto;
+	max-width: 80vw;
+	margin: 2.5rem auto;
+	margin-bottom: 100px;
 }
 
 .navbar-custom {
+	padding-top: 1rem;
 	background-color: darkcyan;
 	box-shadow: 0px 0px 10px black;
 }
@@ -116,15 +120,15 @@ h2.header-subtitle {
 	display: table-cell;
 	vertical-align: middle;
 	font-family: 'Charmonman', cursive;
-	font-size: 0.9rem;
+	font-size: 1.15rem;
 	/*right: 7vw;
 	padding-top: 0.75rem;
 	padding-right: 1rem;*/
 	/*transform: rotate(-15deg);*/
 	/*border-bottom: 2px solid;*/
 	border-bottom-color: lightcyan;
-	color: darkcyan;
-	text-shadow: 1px 1px 1px black;
+	color: goldenrod;
+	text-shadow: 1px 1px 10px black;
 }
 
 .icon-img {
@@ -147,3 +151,14 @@ h2.header-subtitle {
 }
 
 
+
+.vibration {
+	color: aquamarine;
+	font-size: 3rem;
+	text-shadow: 0px 0px 10px;
+}
+
+#mandala-author {
+	position: absolute;
+	font-size: 0.7rem;
+}
