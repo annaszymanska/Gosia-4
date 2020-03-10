@@ -8,6 +8,9 @@
 	margin: 0px;
 	line-height: 1.7;
 }
+a:hover {
+	text-decoration: none;
+}
 
 body {
 	height: 100vh;
@@ -32,10 +35,16 @@ header .title {
 }
 
 header .title h1 {
-	font-size: 2.2rem;
+	font-size: 2.5rem;
 	font-family: 'Charmonman', cursive;
 	color: goldenrod;
 	/*text-shadow: 1px 1px 10px black;*/
+}
+
+header .title h1 .vibration {
+	color: aquamarine;
+	font-size: 3.2rem;
+	text-shadow: 0px 0px 10px;
 }
 
 header .title h1.subpage-title {
@@ -55,7 +64,7 @@ h3{
 .front-image {
 	text-align: center;
 	min-height: 62vh;
-	margin-bottom: -4rem; /*2rem*/
+	margin-bottom: -7rem; /*2rem*/
 	padding: 2rem 0;
 	background-image: radial-gradient(turquoise, #008486);
 	box-shadow: 0px 0px 10px black;
@@ -63,17 +72,17 @@ h3{
 
 .front-image img {
 	max-height: 66vh;
-	max-width: 90vw;
+	max-width: 80vw;
 	border-radius: 50%;
 	box-shadow: 0px 0px 10px black;	
 }
 
 #front-image {
-	animation-name: example;
+	animation-name: rotate360;
 	animation-duration: 10s;
 }
 
-@keyframes example {
+@keyframes rotate360 {
 	from {transform: rotate(0deg);}
 	to {transform: rotate(360deg);}
 }
@@ -151,24 +160,25 @@ footer a.sublink {
 	font-size: 1.7rem;
 }
 
-.about-me {
+.darkcyan {
 	/*background-image: radial-gradient(aquamarine 5%, darkcyan 95%);*/
 	background-color: darkcyan;
 	/*background-image: linear-gradient(midnightblue, darkcyan);*/
 }
 
 .about-me-img {
-	text-align: center;	
+	text-align: center;
 }
+
 .about-me-img img {
 	margin: 2rem auto;
 	margin-top: 0rem;
-	max-height: 70vh;
+	max-height: 50vh;
 	max-width: 70vw;
 	box-shadow: 1px 1px 10px black;
 	border-radius: 50%;
 }
-h2.header-subtitle {
+a h2.header-subtitle {
 	/*position: absolute;*/
 	display: table-cell;
 	vertical-align: middle;
@@ -181,17 +191,17 @@ h2.header-subtitle {
 	/*border-bottom: 2px solid;*/
 	border-bottom-color: lightcyan;
 	color: aquamarine;
-	text-shadow: 1px 1px 7px;
+	text-shadow: 1px 1px 7px aquamarine;
 }
 
-.icon-img {
+a .icon-img {
 	display: table-cell;
 	vertical-align: middle;
 	width: 33px;
 	border-radius: 50%;
 	border: px solid white;
 	margin-right: 0.5rem;
-	box-shadow: 0px 0px 10px;
+	box-shadow: 0px 0px 10px black;
 }
 
 .logo-wrapper {
@@ -203,14 +213,6 @@ h2.header-subtitle {
 	margin-right: 1rem;
 }
 
-
-
-.vibration {
-	color: aquamarine;
-	font-size: 3rem;
-	text-shadow: 0px 0px 10px;
-}
-
 #mandala-author {
 	position: absolute;
 	font-size: 0.7rem;
@@ -220,5 +222,23 @@ h2.header-subtitle {
 /* ===== MEDIA QUERIES ===== */
 /*===========================*/
 
-@media (min-width: 600px) {
+@media (min-width: 576px) and (max-width: 650px){
+	.navbar-custom .navbar-nav .nav-item {
+		padding: 0 0.25rem;
+		font-size: 1rem;
+	}	
+}
+
+
+#quote {
+	margin-top: -100px;
+	margin-bottom: 2rem;
+	font-size: 2.3rem;
+	line-height: 1.3;
+	letter-spacing: 3px;
+	text-align: center;
+	color: turquoise;
+	font-family: 'Dancing Script';
+	text-shadow: 1px 1px 15px;
+	opacity: 90%;
 }
