@@ -3,9 +3,9 @@
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
-
 * {
 	margin: 0px;
+	padding: 0px;
 	line-height: 1.7;
 }
 a:hover {
@@ -66,12 +66,13 @@ h3{
 	min-height: 62vh;
 	/*margin-bottom: -7rem; 2rem*/
 	padding-top: 2rem;
+	margin-bottom: 5rem;
 	background-image: radial-gradient(turquoise, #008486);
 	box-shadow: 0px 0px 10px black;
 }
 
 .front-image img {
-	max-height: 66vh;
+	max-height: 70vh;
 	max-width: 80vw;
 	border-radius: 50%;
 	box-shadow: 0px 0px 10px black;	
@@ -88,6 +89,12 @@ h3{
 }
 
 section {
+	font-size: 1.3rem;
+	padding-bottom: 1rem;
+	text-align: center;
+}
+section.text-center {
+	text-align: center;
 }
 
 footer{
@@ -112,12 +119,6 @@ footer a.sublink {
 	font-size: 90%;
 }
 
-.container {
-	position: relative;
-	max-width: 80vw;
-	margin: 2.5rem auto;
-	margin-bottom: 100px;
-}
 
 /* ====== NAVIGATION STYLES ====== */
 .navbar-custom {
@@ -218,6 +219,84 @@ a .icon-img {
 	font-size: 0.7rem;
 }
 
+#quote {
+	margin-bottom: 2rem;
+	font-size: 2.3rem;
+	line-height: 1.3;
+	letter-spacing: 3px;
+	text-align: center;
+	color: turquoise;
+	font-family: 'Dancing Script';
+	text-shadow: 1px 1px 15px;
+	opacity: 90%;
+}
+
+a.facebook-custom {
+	position: fixed;
+	right: 0;
+	top: 55vh;
+	color: paleturquoise;
+	font-size: 2.5rem;
+	z-index: 2;
+}
+a.facebook-custom:hover {
+	color: darkcyan;
+	text-shadow: 1px 1px 7px aquamarine;
+}
+
+img.basic-picture {
+	width: 250px;
+	box-shadow: 2px 2px 5px 1px black;
+	border: 1px solid darkgoldenrod;
+	margin: 1rem auto;
+}
+
+#news h3 {
+	font-size: 3rem;
+    color: darkcyan;
+    font-family: 'Dancing Script', cursive;
+    margin: 1.5rem 0rem auto;
+    text-shadow: 0px 0px 0px;
+}
+
+hr {
+	margin: 0 auto;
+	max-width: 80vw;
+	margin-bottom: 1.5rem;
+}
+
+h4 {
+	padding: 1rem;
+	font-weight: normal;
+}
+
+section {
+	padding-right: 10vw;
+	padding-left: 10vw;
+	margin-bottom: 1rem;
+	font-family: Gupter;
+	font-size: 1.4rem;
+}
+
+#news {
+	background-color: hsla(60, 80%, 90%, 0.5);
+	padding: 1rem;
+	margin-bottom: 3rem;
+}
+
+
+#read-more {
+}
+
+div.container-custom {
+	/*position: relative;
+	padding-left: 0;
+	padding-right: 0;
+	margin: 0rem auto;*/
+	margin-bottom: 100px;
+}
+
+
 /*===========================*/
 /* ===== MEDIA QUERIES ===== */
 /*===========================*/
@@ -229,15 +308,9 @@ a .icon-img {
 	}	
 }
 
-
-#quote {
-	margin-bottom: 2rem;
-	font-size: 2.3rem;
-	line-height: 1.3;
-	letter-spacing: 3px;
-	text-align: center;
-	color: turquoise;
-	font-family: 'Dancing Script';
-	text-shadow: 1px 1px 15px;
-	opacity: 90%;
+@media (min-width: 768px) {
+	img.basic-picture
+	{
+		margin: 1rem;
+	}
 }
