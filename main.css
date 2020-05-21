@@ -72,7 +72,7 @@ h3{
 }
 
 .front-image img {
-	max-height: 70vh;
+	max-height: 50vh;
 	max-width: 80vw;
 	border-radius: 50%;
 	box-shadow: 0px 0px 10px black;	
@@ -252,17 +252,21 @@ img.basic-picture {
 }
 
 #news h3 {
-	font-size: 3rem;
+	/*font-size: 3rem;
     color: darkcyan;
     font-family: 'Dancing Script', cursive;
     margin: 1.5rem 0rem auto;
-    text-shadow: 0px 0px 0px;
+    text-shadow: 0px 0px 0px;*/
+	
+	color: white;
+	font-size: 3.2rem;
+	text-shadow: 0px 0px 5px;
 }
 
 hr {
 	margin: 0 auto;
 	max-width: 80vw;
-	margin-bottom: 1.5rem;
+	margin-bottom: 3rem;
 }
 
 h4 {
@@ -275,17 +279,37 @@ section {
 	padding-left: 10vw;
 	margin-bottom: 1rem;
 	font-family: Gupter;
-	font-size: 1.4rem;
+	/*font-family: 'Libre Baskerville', serif;*/
+	font-size: 1.rem;
 }
 
 #news {
-	background-color: hsla(60, 80%, 90%, 0.5);
+	/*background-color: hsla(60, 80%, 90%, 0.5);*/
+	/*background-color: hsla(60, 80%, 90%, 0.5);*/
 	padding: 1rem;
-	margin-bottom: 3rem;
+	margin-bottom: 4rem;
+	margin-top: 4rem;
+	/*background-color:aquamarine*/
+	background-color: goldenrod;
+	background-image: radial-gradient(goldenrod, darkcyan);
+	color: antiquewhite;
 }
 
-
 #read-more {
+	display: block;
+	margin: 0 auto;
+	width: 70px;
+	min-height: 70px;
+	border-radius: 50%;
+	border: 5px solid;
+	background-color: transparent;
+	font-family: 'Crimson Text', serif;
+	text-transform: uppercase;
+	font-size: 1.2rem;
+	padding: 0.5rem;
+	color: antiquewhite;
+	text-shadow: 0px 0px 3px;
+	box-shadow: 0px 0px 10px;
 }
 
 div.container-custom {
@@ -296,6 +320,21 @@ div.container-custom {
 	margin-bottom: 100px;
 }
 
+#cd-cover {
+	max-width: 70vw;
+	max-height: 60vh;
+	margin: 1rem auto;
+	box-shadow: 0px 0px 5px black;
+}
+
+
+#news-title {
+	/*font-weight: bold;*/
+	font-family: 'Crimson Text', serif;
+	color: ;
+	font-size: 1.6rem;
+    text-transform: uppercase;
+}
 
 /*===========================*/
 /* ===== MEDIA QUERIES ===== */
@@ -309,8 +348,16 @@ div.container-custom {
 }
 
 @media (min-width: 768px) {
-	img.basic-picture
-	{
-		margin: 1rem;
+	#cd-cover {
+		max-width: 20vw;
+	}
+	.front-image img {
+		max-height: 67vh;
+	}
+}
+	
+@media (min-width: 1024px) {
+	.front-image img {
+		max-height: 70vh;
 	}
 }
