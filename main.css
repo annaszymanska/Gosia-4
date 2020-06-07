@@ -8,6 +8,7 @@
 	padding: 0px;
 	line-height: 1.7;
 }
+
 a:hover {
 	text-decoration: none;
 }
@@ -151,7 +152,7 @@ footer a.sublink {
 	color: navajowhite;
 }
 
-.navbar-custom .navbar-nav .nav-link:hover {
+.navbar-custom .navbar-nav .nav-link:hover{
 	color: turquoise;
 }
 
@@ -172,10 +173,10 @@ footer a.sublink {
 }
 
 .about-me-img img {
-	margin: 2rem auto;
+	/*margin: 2rem auto;*/
 	margin-top: 0rem;
 	max-height: 50vh;
-	max-width: 70vw;
+	max-width: 60vw;
 	box-shadow: 1px 1px 10px black;
 	border-radius: 50%;
 }
@@ -257,10 +258,9 @@ img.basic-picture {
     font-family: 'Dancing Script', cursive;
     margin: 1.5rem 0rem auto;
     text-shadow: 0px 0px 0px;*/
-	
-	color: white;
+	color: darkcyan;
 	font-size: 3.2rem;
-	text-shadow: 0px 0px 5px;
+	text-shadow: 0px 0px 0px;
 }
 
 hr {
@@ -290,26 +290,33 @@ section {
 	margin-bottom: 4rem;
 	margin-top: 4rem;
 	/*background-color:aquamarine*/
-	background-color: goldenrod;
+	/*background-color: goldenrod;
 	background-image: radial-gradient(goldenrod, darkcyan);
 	color: antiquewhite;
+    background-image: radial-gradient(#00b8ff80, #00518b);
+	background-color: rgba(10, 181, 185, 0.82);*/
 }
 
 #read-more {
 	display: block;
-	margin: 0 auto;
-	width: 70px;
+	margin: 1rem auto;
 	min-height: 70px;
-	border-radius: 50%;
-	border: 5px solid;
+	border: none;
+	/*border-radius: 50%;
+	border: 5px solid;*/
 	background-color: transparent;
 	font-family: 'Crimson Text', serif;
 	text-transform: uppercase;
-	font-size: 1.2rem;
 	padding: 0.5rem;
-	color: antiquewhite;
+	color: goldenrod;
+	/*text-shadow: 0px 0px 3px;
+	box-shadow: 0px 0px 10px;*/
+}
+
+#read-more:hover {
+	color: paleturquoise;
+	font-size: 1.5rem;
 	text-shadow: 0px 0px 3px;
-	box-shadow: 0px 0px 10px;
 }
 
 div.container-custom {
@@ -327,13 +334,18 @@ div.container-custom {
 	box-shadow: 0px 0px 5px black;
 }
 
-
-#news-title {
+#news-title a {
 	/*font-weight: bold;*/
 	font-family: 'Crimson Text', serif;
 	color: ;
 	font-size: 1.6rem;
     text-transform: uppercase;
+	color: goldenrod;
+}
+
+#news-title a:hover {
+	color: paleturquoise;
+	text-shadow: 1px 1px 7px;
 }
 
 /*===========================*/
